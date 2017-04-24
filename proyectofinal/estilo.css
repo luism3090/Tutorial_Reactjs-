@@ -1,0 +1,55 @@
+#formulario
+{	display:inline-block;
+	border:1px solid black;	
+	width: 35%;
+	height:550px;
+}
+
+
+#contPersonajes
+{
+	display:inline-block;
+	border:1px solid black;	
+	width: 64%;
+	height:550px;
+	position: absolute;
+}
+
+.personaje
+{
+	background-color:blue;
+	height: 160px;
+	width: 120px;
+	float:left;
+	margin:3px;
+}
+
+.foto
+{
+	
+	height: 80px;
+	width: 115px;
+}
+
+img
+{
+	height: 60px;
+    width: 115px;
+    margin:2px 2px;
+}
+
+.nombre
+{
+	color: white;
+	font-weight: bold;
+}
+
+.biografia
+{
+	font-size: 9px;
+}
+
+input
+{
+	width: 400px;
+}
