@@ -9,17 +9,50 @@ class Personaje extends React.Component
 						nombre:"Steve Jobs",
 						biografia:"Steve Jobs es la biografía autorizada del empresario informático Steve Jobs. Fue escrita a pedido del propio Jobs por el biógrafo "	
 		}
+
+		
+		this.agregarBillGates = this.agregarBillGates.bind(this);
+
 	}
 
-	agregarBillGates: function()
-	{
-		// this.setState({
-		// 	urlFoto:"http://www.cuanto-gana.com/wp-content/uploads/2014/03/cuanto-gana-bill-gates.jpg",
-		// 	nombre:"Bill Gates",
-		// 	biografia:"Bill Gates, es un empresario, informático y filántropo4 estadounidense, cofundador de la empresa de software Microsoft junto con Paul Allen"	
-		// });
-	}
- 	,
+
+agregarBillGates() 
+{
+    
+    this.setState(function(prevState, props) {
+  	return {
+		    	urlFoto:"http://www.cuanto-gana.com/wp-content/uploads/2014/03/cuanto-gana-bill-gates.jpg",
+				nombre:"Bill Gates",
+				biografia:"Bill Gates, es un empresario, informático y filántropo4 estadounidense, cofundador de la empresa de software Microsoft junto con Paul Allen"	
+
+  			};
+
+	});
+
+
+
+	// this.setState((prevState, props) => (
+	// {
+	//   	urlFoto:"http://www.cuanto-gana.com/wp-content/uploads/2014/03/cuanto-gana-bill-gates.jpg",
+	// 	nombre:"Bill Gates",
+	// 	biografia:"Bill Gates, es un empresario, informático y filántropo4 estadounidense, cofundador de la empresa de software Microsoft junto con Paul Allen"	
+
+
+	// }));
+
+
+}
+
+	// agregarBillGates: function()
+	// {
+	// 	// this.setState({
+	// 	// 	urlFoto:"http://www.cuanto-gana.com/wp-content/uploads/2014/03/cuanto-gana-bill-gates.jpg",
+	// 	// 	nombre:"Bill Gates",
+	// 	// 	biografia:"Bill Gates, es un empresario, informático y filántropo4 estadounidense, cofundador de la empresa de software Microsoft junto con Paul Allen"	
+	// 	// });
+	// }
+ // 	,
+ 
 	render(){
 		return (	
 					<div>
